@@ -16,6 +16,7 @@
 
 class Mushrooms{
 private:
+    Point location
     int x,y,damage;
     bool active;
 
@@ -28,4 +29,10 @@ public:
 
 };
 
+void mSet{
+    Mushrooms[100]
+    for(int i=0; i<100; i++){
+        Mushrooms[i].setlocation()
+    }
+}
 #endif // MUSHROOMS_H_INCLUDED
