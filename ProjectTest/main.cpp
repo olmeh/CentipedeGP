@@ -1,6 +1,19 @@
+/*
+* Group Members:
+*   Olmeh Salinas
+*   Christian Hansen
+*   Emmanuel Ngong
+*   Billy Roberson
+*   Josh -something-
+* Assignment Name: Centipede Game
+* Assignment Description: Create the game Centipede.
+*/
+
 #include <iostream>
 #include "SDL_Plotter.h"
-
+#include "Player.h"
+#include "Mushrooms.h"
+#include "Centipede.h"
 
 using namespace std;
 
@@ -15,7 +28,7 @@ int main(int argc, char* argv[])
             key = GameScreen.getKey();
         }
 
-        cout << "Hello World." << endl;
+
 
     }
 
