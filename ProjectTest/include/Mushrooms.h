@@ -13,10 +13,11 @@
 #define MUSHROOMS_H_INCLUDED
 
 #include "SDL_Plotter.h"
+#include "Point.h"
 
 class Mushrooms{
 private:
-    Point location
+    Point location;
     int x,y,damage;
     bool active;
 
@@ -28,11 +29,4 @@ public:
 
 
 };
-
-void mSet{
-    Mushrooms[100]
-    for(int i=0; i<100; i++){
-        Mushrooms[i].setlocation()
-    }
-}
 #endif // MUSHROOMS_H_INCLUDED

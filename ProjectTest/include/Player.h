@@ -35,7 +35,6 @@ public:
     void setDir(Direction);
     void setSpeed(int);
 
-
 };
 
 #endif // PLAYER_H_INCLUDED

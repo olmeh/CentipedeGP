@@ -10,30 +10,46 @@
 */
 
 #include <iostream>
-#include "SDL_Plotter.h"
-#include "Player.h"
-#include "Mushrooms.h"
-#include "Centipede.h"
-#include "StartScreen.h"
+#include "include/SDL_Plotter.h"
+#include "include/Player.h"
+#include "include/Mushrooms.h"
+#include "include/Centipede.h"
+#include "include/StartScreen.h"
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
     SDL_Plotter GameScreen(1000,1000);
-    StartScreen(GameScreen);
-
+    Player p;
     char key;
+    StartScreen(GameScreen);
+    p.setSpeed(20);
+
+
 
     while(!GameScreen.getQuit()){
         if(GameScreen.kbhit()){
             key = GameScreen.getKey();
+            switch(key){
+                case RIGHT_ARROW: p.setDir(RIGHT);
+                    p.move(GameScreen);
+                    break;
+                case LEFT_ARROW: p.setDir(LEFT);
+                    p.move(GameScreen);
+                    break;
+                case DOWN_ARROW: p.setDir(DOWN);
+                    p.move(GameScreen);
+                    break;
+                case UP_ARROW: p.setDir(UP);
+                    p.move(GameScreen);
+                    break;
+            }
         }
 
-
-
-
-
+        p.draw(GameScreen);
+        GameScreen.update();
+        GameScreen.Sleep(0);
 
     }
 

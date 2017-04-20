@@ -14,13 +14,13 @@
 
 1492720543 source:h:\centipedegp\projecttest\centipede.cpp
 
-1492721960 source:h:\centipedegp\projecttest\main.cpp
+1492728748 source:h:\centipedegp\projecttest\main.cpp
 	<iostream>
-	"SDL_Plotter.h"
-	"Player.h"
-	"Mushrooms.h"
-	"Centipede.h"
-	"StartScreen.h"
+	"include/SDL_Plotter.h"
+	"include/Player.h"
+	"include/Mushrooms.h"
+	"include/Centipede.h"
+	"include/StartScreen.h"
 
 1492720543 h:\centipedegp\projecttest\sdl_plotter.h
 	<SDL2/SDL.h>
@@ -55,8 +55,9 @@
 1492722891 source:h:\centipedegp\projecttest\src\mushrooms.cpp
 	"../include/Mushrooms.h"
 
-1492724463 h:\centipedegp\projecttest\include\mushrooms.h
+1492725559 h:\centipedegp\projecttest\include\mushrooms.h
 	"SDL_Plotter.h"
+	"Point.h"
 
 1492722515 h:\centipedegp\projecttest\include\sdl_plotter.h
 	<SDL2/SDL.h>
@@ -67,7 +68,8 @@
 	<string.h>
 	<map>
 
-1492720543 source:h:\centipedegp\projecttest\src\player.cpp
+1492728680 source:h:\centipedegp\projecttest\src\player.cpp
+	"../include/Player.h"
 
 1492722900 source:h:\centipedegp\projecttest\src\point.cpp
 	"../include/Point.h"
@@ -75,4 +77,16 @@
 1490109408 h:\centipedegp\projecttest\include\point.h
 	<ostream>
 	"SDL_Plotter.h"
+
+1492728680 h:\centipedegp\projecttest\include\player.h
+	"../include/Point.h"
+
+1492722505 h:\centipedegp\projecttest\include\centipede.h
+
+1492722511 h:\centipedegp\projecttest\include\startscreen.h
+	"SDL_Plotter.h"
+
+1492723166 source:h:\centipedegp\projecttest\src\startscreen.cpp
+	"../include/StartScreen.h"
+	"../include/SDL_Plotter.h"
 
