@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
             key = GameScreen.getKey();
         }
 
-        cout << "Hellor World." << endl;
+        cout << "Hello World." << endl;
 
     }
 
