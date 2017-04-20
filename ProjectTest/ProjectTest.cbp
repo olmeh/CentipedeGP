@@ -32,8 +32,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="SDL_Plotter.h" />
+		<Unit filename="include/Centipede.h" />
+		<Unit filename="include/Mushrooms.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Point.h" />
+		<Unit filename="include/SDL_Plotter.h" />
+		<Unit filename="include/StartScreen.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Centipede.cpp" />
+		<Unit filename="src/Mushrooms.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Point.cpp" />
+		<Unit filename="src/StartScreen.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
