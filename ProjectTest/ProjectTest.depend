@@ -12,3 +12,67 @@
 	<string.h>
 	<map>
 
+1492720543 source:h:\centipedegp\projecttest\centipede.cpp
+
+1492721960 source:h:\centipedegp\projecttest\main.cpp
+	<iostream>
+	"SDL_Plotter.h"
+	"Player.h"
+	"Mushrooms.h"
+	"Centipede.h"
+	"StartScreen.h"
+
+1492720543 h:\centipedegp\projecttest\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1492720543 h:\centipedegp\projecttest\player.h
+
+1492721402 h:\centipedegp\projecttest\mushrooms.h
+	"SDL_Plotter.h"
+
+1492721215 h:\centipedegp\projecttest\centipede.h
+
+1492721215 h:\centipedegp\projecttest\startscreen.h
+	"SDL_Plotter.h"
+
+1492721406 source:h:\centipedegp\projecttest\mushrooms.cpp
+	"Mushrooms.h"
+
+1492720543 source:h:\centipedegp\projecttest\player.cpp
+
+1492721627 source:h:\centipedegp\projecttest\startscreen.cpp
+	"StartScreen.h"
+	"SDL_Plotter.h"
+
+1492720543 source:h:\centipedegp\projecttest\src\centipede.cpp
+
+1492722891 source:h:\centipedegp\projecttest\src\mushrooms.cpp
+	"../include/Mushrooms.h"
+
+1492722507 h:\centipedegp\projecttest\include\mushrooms.h
+	"SDL_Plotter.h"
+
+1492722515 h:\centipedegp\projecttest\include\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1492720543 source:h:\centipedegp\projecttest\src\player.cpp
+
+1492722900 source:h:\centipedegp\projecttest\src\point.cpp
+	"../include/Point.h"
+
+1490109408 h:\centipedegp\projecttest\include\point.h
+	<ostream>
+	"SDL_Plotter.h"
+

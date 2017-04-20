@@ -14,12 +14,14 @@
 #include "Player.h"
 #include "Mushrooms.h"
 #include "Centipede.h"
+#include "StartScreen.h"
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
     SDL_Plotter GameScreen(1000,1000);
+    StartScreen(GameScreen);
 
     char key;
 
@@ -27,6 +29,7 @@ int main(int argc, char* argv[])
         if(GameScreen.kbhit()){
             key = GameScreen.getKey();
         }
+
 
 
 

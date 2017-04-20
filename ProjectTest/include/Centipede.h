@@ -12,6 +12,14 @@
 #ifndef CENTIPEDE_H_INCLUDED
 #define CENTIPEDE_H_INCLUDED
 
+class Centipede{
+private:
+    int moveSpeed;
+    int length;
 
+public:
+
+
+};
 
 #endif // CENTIPEDE_H_INCLUDED

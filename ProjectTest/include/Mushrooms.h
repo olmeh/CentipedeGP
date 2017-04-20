@@ -12,6 +12,8 @@
 #ifndef MUSHROOMS_H_INCLUDED
 #define MUSHROOMS_H_INCLUDED
 
+#include "SDL_Plotter.h"
+
 class Mushrooms{
 private:
     int x,y,damage;
