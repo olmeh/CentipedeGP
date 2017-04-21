@@ -48,7 +48,7 @@ int main( int argc, char* args[] )
             SDL_UpdateWindowSurface( gWindow );
 
              //Wait two seconds
-            SDL_Delay( 2000 );
+            SDL_Delay( 100000 );
         }
     }
 
@@ -99,7 +99,7 @@ bool loadMedia()
     bool success = true;
 
     //Load splash image
-    gHelloWorld = SDL_LoadBMP( "FC53 (1).BMP" );
+    gHelloWorld = SDL_LoadBMP( "../ProjectTest/images/Ship.bmp" );
     if( gHelloWorld == NULL )
     {
         printf( "Unable to load image %s! SDL Error: %s\n", "02_getting_an_image_on_the_screen/hello_world.bmp", SDL_GetError() );

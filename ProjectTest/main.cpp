@@ -20,7 +20,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    SDL_Plotter GameScreen(1000,1000);
+    SDL_Plotter GameScreen(600,600);
     Player p;
     char key;
     StartScreen(GameScreen);

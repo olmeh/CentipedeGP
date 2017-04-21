@@ -10,36 +10,61 @@
 */
 
 #include "../include/Player.h"
+#include "../include/LoadMedia.h"
+
+SDL_Surface* playerImage = SDL_LoadBMP( "../images/Ship.bmp" );
+loadMedia(playerImage);
+SDL_Rect* playerLocation;
+
 
 Player::Player(){
-    location.x = 490;
-    location.y = 800;
+    location.x = 300;
+    location.y = 500;
+    playerLocation.x = 300;
+    playerLocation.y = 500;
 
     lives = 3;
     speed = 20;
+    dir = RIGHT;
     height = 20;
-    red = 0;
+    width = 20;
+    //playerLocation.h = 20;
+    //playerLocation.w = 20;
+    red = 255;
     blue = 0;
-    green = 255;
+    green = 0;
 }
 
-void Player::move(){
-    switch(dir){
-        case UP: location.y -= speed;
-            break;
-        case DOWN: location.y += speed;
-            break;
-        case LEFT: location.x -= speed;
-            break;
-        case RIGHT: location.x += speed;
-            break;
-    }
-}
 void Player::move(SDL_Plotter& g){
     erase(g);
     move();
 }
+void Player::move(){
+    switch(dir){
+        case UP: if(location.y >450){
+                    location.y -= speed;
+                    playerLocation.y -= speed;
+                }
+            break;
+        case DOWN: if(location.y <580)
+                    location.y += speed;
+                    playerLocation.y += speed;
+            break;
+        case LEFT: if(location.x >0)
+                    location.x -= speed;
+                    playerLocation.x -= speed;
+            break;
+        case RIGHT: if(location.x <580)
+                    location.x += speed;
+                    playerLocation.x += speed;
+            break;
+    }
+}
 void Player::draw(SDL_Plotter& g){
+    if(location.x + c >= 0 && location.x + c < g.getCol()){
+        if(location.y + r >= 0 && location.y + r < g.getRow())
+            SDL_BlitSurface(playerImage, playerLocation, g, NULL)
+    }
     for(int r=0; r<height; r++){
         for(int c = 0; c < width; c++){
             if(location.x + c >= 0 && location.x + c < g.getCol()){
@@ -48,6 +73,7 @@ void Player::draw(SDL_Plotter& g){
             }
         }
     }
+
 }
 void Player::erase(SDL_Plotter& g){
     for(int r=0; r<height; r++){

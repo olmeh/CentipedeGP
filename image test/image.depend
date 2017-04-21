@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1492735752 source:h:\centipedegp\image test\main.cpp
+	<iostream>
+	"SDL2/SDL.h"
+	<stdio.h>
+
