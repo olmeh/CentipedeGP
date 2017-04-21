@@ -1,5 +1,6 @@
 #include <iostream>
 #include "SDL2/SDL.h"
+#include "../ProjectTest/include/SDL_Plotter.h"
 //Using SDL and standard IO
 
 #include <stdio.h>
@@ -26,34 +27,20 @@ const int SCREEN_HEIGHT = 1000;
 
 int main( int argc, char* args[] )
 {
-    //Start up SDL and create window
-    if( !init() )
-    {
-        cout<< "Failed to initialize!\n" <<endl;
-    }
-    else
-    {
-        //Load media
-        if( !loadMedia() )
-        {
-            cout<< "Failed to load media!\n" <<endl;
-        }
-        else
-        {
-            //Apply the image
-            SDL_BlitSurface( gHelloWorld, NULL, gScreenSurface, NULL );
+    if( !init() ) cout<< "Failed to initialize!\n" <<endl;
+    else{
+        if( !loadMedia() ) cout<< "Failed to load media!\n" <<endl;
+        else{
+            while(!init){
+                SDL_BlitSurface( gHelloWorld, NULL, gScreenSurface, NULL );
 
+                SDL_UpdateWindowSurface( gWindow );
 
-            //Update the surface
-            SDL_UpdateWindowSurface( gWindow );
+                if()
+            }
 
-             //Wait two seconds
-            SDL_Delay( 100000 );
         }
     }
-
-    //Free resources and close SDL
-    close();
 
     return 0;
 }

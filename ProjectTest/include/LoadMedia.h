@@ -6,7 +6,7 @@
 
 SDL_Surface* img = NULL;
 
-bool loadMedia(string);
+bool loadMedia(SDL_Surface*);
 
 
 

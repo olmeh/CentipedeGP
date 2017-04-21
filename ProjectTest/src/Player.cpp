@@ -13,8 +13,7 @@
 #include "../include/LoadMedia.h"
 
 SDL_Surface* playerImage = SDL_LoadBMP( "../images/Ship.bmp" );
-loadMedia(playerImage);
-SDL_Rect* playerLocation;
+SDL_Rect playerLocation;
 
 
 Player::Player(){
@@ -61,10 +60,6 @@ void Player::move(){
     }
 }
 void Player::draw(SDL_Plotter& g){
-    if(location.x + c >= 0 && location.x + c < g.getCol()){
-        if(location.y + r >= 0 && location.y + r < g.getRow())
-            SDL_BlitSurface(playerImage, playerLocation, g, NULL)
-    }
     for(int r=0; r<height; r++){
         for(int c = 0; c < width; c++){
             if(location.x + c >= 0 && location.x + c < g.getCol()){
