@@ -14,7 +14,7 @@
 
 1492720543 source:h:\centipedegp\projecttest\centipede.cpp
 
-1492735522 source:h:\centipedegp\projecttest\main.cpp
+1492815375 source:h:\centipedegp\projecttest\main.cpp
 	<iostream>
 	"include/SDL_Plotter.h"
 	"include/Player.h"
@@ -50,16 +50,16 @@
 	"StartScreen.h"
 	"SDL_Plotter.h"
 
-1492720543 source:h:\centipedegp\projecttest\src\centipede.cpp
+1492808193 source:h:\centipedegp\projecttest\src\centipede.cpp
 
-1492722891 source:h:\centipedegp\projecttest\src\mushrooms.cpp
+1492808193 source:h:\centipedegp\projecttest\src\mushrooms.cpp
 	"../include/Mushrooms.h"
 
-1492725559 h:\centipedegp\projecttest\include\mushrooms.h
+1492808193 h:\centipedegp\projecttest\include\mushrooms.h
 	"SDL_Plotter.h"
 	"Point.h"
 
-1492722515 h:\centipedegp\projecttest\include\sdl_plotter.h
+1492808193 h:\centipedegp\projecttest\include\sdl_plotter.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_mixer.h>
 	<string.h>
@@ -68,28 +68,30 @@
 	<string.h>
 	<map>
 
-1492735555 source:h:\centipedegp\projecttest\src\player.cpp
+1492813007 source:h:\centipedegp\projecttest\src\player.cpp
 	"../include/Player.h"
+	"../include/LoadMedia.h"
 
-1492722900 source:h:\centipedegp\projecttest\src\point.cpp
+1492808193 source:h:\centipedegp\projecttest\src\point.cpp
 	"../include/Point.h"
 
-1490109408 h:\centipedegp\projecttest\include\point.h
+1492808193 h:\centipedegp\projecttest\include\point.h
 	<ostream>
 	"SDL_Plotter.h"
 
-1492728680 h:\centipedegp\projecttest\include\player.h
+1492812947 h:\centipedegp\projecttest\include\player.h
 	"../include/Point.h"
 
-1492722505 h:\centipedegp\projecttest\include\centipede.h
+1492808193 h:\centipedegp\projecttest\include\centipede.h
 
-1492722511 h:\centipedegp\projecttest\include\startscreen.h
+1492808193 h:\centipedegp\projecttest\include\startscreen.h
 	"SDL_Plotter.h"
 
-1492735597 source:h:\centipedegp\projecttest\src\startscreen.cpp
+1492808193 source:h:\centipedegp\projecttest\src\startscreen.cpp
 	"../include/StartScreen.h"
 	"../include/SDL_Plotter.h"
 
+<<<<<<< HEAD
 1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\main.cpp
 	<iostream>
 	"include/SDL_Plotter.h"
@@ -141,5 +143,15 @@
 
 1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\startscreen.cpp
 	"../include/StartScreen.h"
+=======
+1492808193 h:\centipedegp\projecttest\include\loadmedia.h
+	<string>
+	"SDL_Plotter.h"
+
+1492809624 h:\centipedegp\projecttest\include\sound.h
+
+1492811708 source:h:\centipedegp\projecttest\src\sound.cpp
+	"../include/Sound.h"
+>>>>>>> origin/master
 	"../include/SDL_Plotter.h"
 
