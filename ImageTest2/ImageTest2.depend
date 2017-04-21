@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1492814457 source:c:\users\salinaso\desktop\centipedegp\imagetest2\main.cpp
+	<iostream>
+	<locale>
+	<string>
+	<sstream>
+	<algorithm>
+	<iterator>
+	<cstring>
+	<fstream>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<algorithm>
+
+1492808241 c:\users\salinaso\desktop\centipedegp\imagetest2\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
