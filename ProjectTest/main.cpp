@@ -16,6 +16,7 @@
 #include "include/Centipede.h"
 #include "include/StartScreen.h"
 
+
 using namespace std;
 
 int main(int argc, char* argv[])
@@ -45,13 +46,28 @@ int main(int argc, char* argv[])
                     p.move(GameScreen);
                     break;
             }
+            if(key == ' ')
+            {
+                p.sound();
+            }
+            else if(key == RIGHT_ARROW)
+            {
+                p.setDir(RIGHT);
+                p.move();
+                if(key == ' ')
+                {
+                    p.sound();
+                }
+            }
         }
 
         p.draw(GameScreen);
         GameScreen.update();
         GameScreen.Sleep(0);
 
-    }
 
+
+    }
     return 0;
 }
+

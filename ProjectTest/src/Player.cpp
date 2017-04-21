@@ -25,6 +25,7 @@ Player::Player(){
     lives = 3;
     speed = 20;
     dir = RIGHT;
+    play = false;
     height = 20;
     width = 20;
     //playerLocation.h = 20;
@@ -84,6 +85,35 @@ void Player::setSpeed(int s){
     speed = s;
 }
 
+void Player::sound()
+{
+int soundCount;
+char key;
+
+//The music that will be played
+Mix_Music *gMusic = NULL;
+
+//The sound effects that will be used
+Mix_Chunk *gScratch = NULL;
+Mix_Chunk *gHigh = NULL;
+Mix_Chunk *gMedium = NULL;
+Mix_Chunk *gLow = NULL;
+
+bool success = true;
+
+//Initialize SDL
+        SDL_Init( SDL_INIT_AUDIO );
+
+        Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 );
+                soundCount = 0;
+                gScratch = Mix_LoadWAV( "laser.wav" );
+
+
+        switch(play){
+        case SPACE: Mix_PlayChannel( -1, gScratch, 0 ) == 1;
+            break;
+            }
+}
 
 
 

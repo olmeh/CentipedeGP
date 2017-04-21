@@ -16,11 +16,14 @@
 
 enum Direction{UP,DOWN,LEFT,RIGHT};;
 
+enum PlaySound{SPACE};;
+
 class Player{
 private:
     Point location;
     int lives;
     int speed;
+    bool play;
     Direction dir;
     int height, width;
     int red, green, blue;
@@ -34,6 +37,7 @@ public:
     void erase(SDL_Plotter& g);
     void setDir(Direction);
     void setSpeed(int);
+    void sound();
 
 };
 
