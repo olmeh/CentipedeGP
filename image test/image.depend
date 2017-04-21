@@ -4,3 +4,18 @@
 	"SDL2/SDL.h"
 	<stdio.h>
 
+1492791925 source:c:\users\forge\desktop\centipedegp\image test\main.cpp
+	<iostream>
+	"SDL2/SDL.h"
+	"../ProjectTest/include/SDL_Plotter.h"
+	<stdio.h>
+
+1492791924 c:\users\forge\desktop\centipedegp\projecttest\include\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+

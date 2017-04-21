@@ -36,7 +36,7 @@ int main( int argc, char* args[] )
 
                 SDL_UpdateWindowSurface( gWindow );
 
-                if()
+                if(1)
             }
 
         }
