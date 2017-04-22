@@ -6,9 +6,9 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-    int r,g,b;
+    int xRes,yRes,r,g,b;
 
     fstream file;
     string fileName;
@@ -22,32 +22,25 @@ int main()
         if(!file) cout << "File Not Found" << endl;
     }while(!file);
 
-    SDL_Plotter image(800,800);
+    file >> xRes >> yRes;
 
+    SDL_Plotter GameScreen;
     char key;
 
-    for(int i=0; i<800; i++)){
-        for(int j=0; j<800; j++)){
-            image.plotPixel(i,j,0,0,0);
+    for(int i=0; i<xRes; i++){
+        for(int j=0; j<yRes; j++){
+            file >> r >> g >> b;
+            cout << r << " " << g << " " << b << endl;
+            GameScreen.plotPixel(i,j,r,g,b);
         }
     }
 
-    for(int i=0; i<20; i++)){
-        for(int j=0; j<20; j++)){
-            image.plotPixel(i,j,r,g,b);
+    while(!GameScreen.getQuit()){
+        if(GameScreen.kbhit()){
+            key = GameScreen.getKey();
         }
+        GameScreen.update();
     }
-
-    while(!image.getQuit()){
-        if(image.kbhit()){
-            key = image.getKey();
-        }
-
-
-
-        image.update();
-    }
-
 
 
 
