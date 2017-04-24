@@ -38,6 +38,12 @@ public:
     void setDir(Direction);
     void setSpeed(int);
     void sound();
+    //Bullet stuff
+    void update();
+    bool collidesWith(Player *o);
+    void shoot();
+
+
 
 };
 

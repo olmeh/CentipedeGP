@@ -23,6 +23,8 @@ int main(int argc, char* argv[])
 {
     SDL_Plotter GameScreen(600,600);
     Player p;
+    //Bullet object
+    //Player b;
     char key;
     StartScreen(GameScreen);
     p.setSpeed(20);
@@ -45,9 +47,11 @@ int main(int argc, char* argv[])
                 case UP_ARROW: p.setDir(UP);
                     p.move(GameScreen);
                     break;
+
             }
             if(key == ' ')
             {
+                //Shoot bullet
                 p.sound();
             }
             else if(key == RIGHT_ARROW)

@@ -87,21 +87,21 @@ void Player::setSpeed(int s){
 
 void Player::sound()
 {
-int soundCount;
-char key;
+        int soundCount;
+        char key;
 
-//The music that will be played
-Mix_Music *gMusic = NULL;
+        //The music that will be played
+        Mix_Music *gMusic = NULL;
 
-//The sound effects that will be used
-Mix_Chunk *gScratch = NULL;
-Mix_Chunk *gHigh = NULL;
-Mix_Chunk *gMedium = NULL;
-Mix_Chunk *gLow = NULL;
+        //The sound effects that will be used
+        Mix_Chunk *gScratch = NULL;
+        Mix_Chunk *gHigh = NULL;
+        Mix_Chunk *gMedium = NULL;
+        Mix_Chunk *gLow = NULL;
 
-bool success = true;
+        bool success = true;
 
-//Initialize SDL
+        //Initialize SDL
         SDL_Init( SDL_INIT_AUDIO );
 
         Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 );
@@ -115,6 +115,27 @@ bool success = true;
             }
 }
 
+void update()
+{
+    //Change the location of the object
+}
+
+bool collidesWith(Player *o)
+{
+    //Test if the bullet collides with enemy.
+    //If it does, make it invisible and return true
+}
+
+void shoot(Player *o)
+{
+    //gets the location of the ship when the spacebar was hit
+    // uses those coordinates to shoot a bullet.
+    //loop that keeps checking if the bullet has hit an object, or has reached
+        // the ceiling.
+
+    //decrease the y to have it move up the screen.
+    //once the bullet is deleted, the user can shoot another bullet.
+}
 
 
 
