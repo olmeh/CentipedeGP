@@ -4,7 +4,7 @@
 *   Christian Hansen
 *   Emmanuel Ngong
 *   Billy Roberson
-*   Josh -something-
+*   Josh Moisand
 * Assignment Name: Centipede Game
 * Assignment Description: Create the game Centipede.
 */
