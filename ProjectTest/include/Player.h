@@ -35,6 +35,7 @@ public:
     void move(SDL_Plotter& g);
     void draw(SDL_Plotter& g);
     void erase(SDL_Plotter& g);
+    void music();
     void setDir(Direction);
     void setSpeed(int);
     void sound();

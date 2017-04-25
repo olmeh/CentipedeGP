@@ -29,7 +29,10 @@ int main(int argc, char* argv[])
     StartScreen(GameScreen);
     p.setSpeed(20);
 
-
+    if(!GameScreen.getQuit())
+    {
+        p.music();
+    }
 
     while(!GameScreen.getQuit()){
         if(GameScreen.kbhit()){
@@ -54,22 +57,13 @@ int main(int argc, char* argv[])
                 //Shoot bullet
                 p.sound();
             }
-            else if(key == RIGHT_ARROW)
-            {
-                p.setDir(RIGHT);
-                p.move();
-                if(key == ' ')
-                {
-                    p.sound();
-                }
-            }
-        }
+
 
         p.draw(GameScreen);
         GameScreen.update();
         GameScreen.Sleep(0);
 
-
+        }
 
     }
     return 0;

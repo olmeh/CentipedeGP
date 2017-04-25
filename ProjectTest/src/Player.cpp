@@ -115,6 +115,36 @@ void Player::sound()
             }
 }
 
+void Player::music()
+{
+        int soundCount;
+        char key;
+
+        //The music that will be played
+        Mix_Music *gMusic = NULL;
+
+        //The sound effects that will be used
+        Mix_Chunk *gScratch = NULL;
+        Mix_Chunk *gHigh = NULL;
+        Mix_Chunk *gMedium = NULL;
+        Mix_Chunk *gLow = NULL;
+
+        bool success = true;
+
+        //Initialize SDL
+        SDL_Init( SDL_INIT_AUDIO );
+
+        Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 );
+                soundCount = 0;
+                gHigh = Mix_LoadWAV( "music.wav" );
+
+
+        switch(play){
+        case SPACE: Mix_PlayChannel( -1, gHigh, 0 ) == 1;
+            break;
+            }
+}
+
 void update()
 {
     //Change the location of the object
