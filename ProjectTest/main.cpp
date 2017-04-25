@@ -50,15 +50,6 @@ int main(int argc, char* argv[])
             {
                 p.sound();
             }
-            else if(key == RIGHT_ARROW)
-            {
-                p.setDir(RIGHT);
-                p.move();
-                if(key == ' ')
-                {
-                    p.sound();
-                }
-            }
         }
 
         p.draw(GameScreen);
