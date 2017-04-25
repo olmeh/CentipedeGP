@@ -9,27 +9,24 @@
 * Assignment Description: Create the game Centipede.
 */
 
+#include <fstream>
 #include "../include/Player.h"
 #include "../include/LoadMedia.h"
+#include "../include/Mushrooms.h"
 
-SDL_Surface* playerImage = SDL_LoadBMP( "../images/Ship.bmp" );
-SDL_Rect playerLocation;
-
+fstream file;
+int xResl,yResl;
 
 Player::Player(){
     location.x = 300;
-    location.y = 500;
-    playerLocation.x = 300;
-    playerLocation.y = 500;
+    location.y = 550;
 
     lives = 3;
-    speed = 20;
+    speed = 3;
     dir = RIGHT;
     play = false;
     height = 20;
     width = 20;
-    //playerLocation.h = 20;
-    //playerLocation.w = 20;
     red = 255;
     blue = 0;
     green = 0;
@@ -41,35 +38,33 @@ void Player::move(SDL_Plotter& g){
 }
 void Player::move(){
     switch(dir){
-        case UP: if(location.y >450){
+        case UP: if(location.y >500)
                     location.y -= speed;
-                    playerLocation.y -= speed;
-                }
             break;
-        case DOWN: if(location.y <580)
+        case DOWN: if(location.y <630)
                     location.y += speed;
-                    playerLocation.y += speed;
             break;
         case LEFT: if(location.x >0)
                     location.x -= speed;
-                    playerLocation.x -= speed;
             break;
         case RIGHT: if(location.x <580)
                     location.x += speed;
-                    playerLocation.x += speed;
             break;
     }
 }
 void Player::draw(SDL_Plotter& g){
-    for(int r=0; r<height; r++){
-        for(int c = 0; c < width; c++){
+    file.open(".\\images\\txt_files\\Ship.txt");
+    file >> xResl >> yResl;
+    for(int r=0; r<yResl; r++){
+        for(int c = 0; c < xResl; c++){
+            file >> red >> blue >> green;
             if(location.x + c >= 0 && location.x + c < g.getCol()){
                 if(location.y + r >= 0 && location.y + r < g.getRow())
                     g.plotPixel(location.x + c,location.y + r,red,green,blue);
             }
         }
     }
-
+    file.close();
 }
 void Player::erase(SDL_Plotter& g){
     for(int r=0; r<height; r++){

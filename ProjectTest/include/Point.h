@@ -21,7 +21,6 @@ struct Point
         Point(int xy, int yv);
         void draw(ostream&);
         void draw(SDL_Plotter&);
-
 };
 
 #endif // POINT_H_INCLUDED

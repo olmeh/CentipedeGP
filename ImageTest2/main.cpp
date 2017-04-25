@@ -14,10 +14,10 @@ int main(int argc, char* argv[])
     string fileName;
 
     do{
-        cout << "Enter File Name: ";
-        cin >> fileName;
+        //cout << "Enter File Name: ";
+        //cin >> fileName;
 
-        file.open(fileName.c_str());
+        file.open("1.txt");
 
         if(!file) cout << "File Not Found" << endl;
     }while(!file);

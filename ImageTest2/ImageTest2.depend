@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1492827826 source:c:\users\salinaso\desktop\centipedegp\imagetest2\main.cpp
+1493071355 source:c:\users\salinaso\desktop\centipedegp\imagetest2\main.cpp
 	<iostream>
 	<fstream>
 	<string>
 	<cstdlib>
 	"SDL_Plotter.h"
 
-1492827660 c:\users\salinaso\desktop\centipedegp\imagetest2\sdl_plotter.h
+1493071355 c:\users\salinaso\desktop\centipedegp\imagetest2\sdl_plotter.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_mixer.h>
 	<string.h>

@@ -91,16 +91,20 @@
 	"../include/StartScreen.h"
 	"../include/SDL_Plotter.h"
 
-<<<<<<< HEAD
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\main.cpp
+1492808193 D
+
+1493086775 source:c:\users\salinaso\desktop\centipedegp\projecttest\main.cpp
 	<iostream>
+	<cstdlib>
+	<ctime>
+	<fstream>
 	"include/SDL_Plotter.h"
 	"include/Player.h"
 	"include/Mushrooms.h"
 	"include/Centipede.h"
 	"include/StartScreen.h"
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\sdl_plotter.h
+1493071355 c:\users\salinaso\desktop\centipedegp\projecttest\include\sdl_plotter.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_mixer.h>
 	<string.h>
@@ -109,41 +113,51 @@
 	<string.h>
 	<map>
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\player.h
+1493071355 c:\users\salinaso\desktop\centipedegp\projecttest\include\player.h
 	"../include/Point.h"
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\point.h
+1493072708 c:\users\salinaso\desktop\centipedegp\projecttest\include\point.h
 	<ostream>
 	"SDL_Plotter.h"
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\mushrooms.h
+1493080401 c:\users\salinaso\desktop\centipedegp\projecttest\include\mushrooms.h
+	<string>
 	"SDL_Plotter.h"
 	"Point.h"
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\centipede.h
+1493071355 c:\users\salinaso\desktop\centipedegp\projecttest\include\centipede.h
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\startscreen.h
+1493071355 c:\users\salinaso\desktop\centipedegp\projecttest\include\startscreen.h
 	"SDL_Plotter.h"
 
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\centipede.cpp
+1493071355 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\centipede.cpp
 
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\mushrooms.cpp
+1493080425 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\mushrooms.cpp
+	<fstream>
+	<string>
+	"../include/SDL_Plotter.h"
 	"../include/Mushrooms.h"
+	"../include/Point.h"
 
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\player.cpp
+1493086746 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\player.cpp
+	<fstream>
 	"../include/Player.h"
 	"../include/LoadMedia.h"
+	"../include/Mushrooms.h"
 
-1492808241 c:\users\salinaso\desktop\centipedegp\projecttest\include\loadmedia.h
+1493071355 c:\users\salinaso\desktop\centipedegp\projecttest\include\loadmedia.h
 	<string>
 	"SDL_Plotter.h"
 
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\point.cpp
+1493071355 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\point.cpp
 	"../include/Point.h"
 
-1492808241 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\startscreen.cpp
+1493086509 source:c:\users\salinaso\desktop\centipedegp\projecttest\src\startscreen.cpp
 	"../include/StartScreen.h"
-=======
+	"../include/SDL_Plotter.h"
+
+1492808241 e/StartScreen.h"
+
 1492808193 h:\centipedegp\projecttest\include\loadmedia.h
 	<string>
 	"SDL_Plotter.h"
@@ -152,6 +166,7 @@
 
 1492811708 source:h:\centipedegp\projecttest\src\sound.cpp
 	"../include/Sound.h"
->>>>>>> origin/master
+
+1492811708 gin/master
 	"../include/SDL_Plotter.h"
 
